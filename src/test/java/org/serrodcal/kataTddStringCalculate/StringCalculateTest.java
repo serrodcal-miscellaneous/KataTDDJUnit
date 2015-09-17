@@ -37,5 +37,10 @@ public class StringCalculateTest {
     public void twoNumbersShouldReturnAdd(){    	
     	assertEquals(3, this.calculate.run("1,2"));
     }
+    
+    @Test
+    public void MultipleNumbersShouldReturnSum(){    	
+    	assertEquals(6, this.calculate.run("1,2,3"));
+    }
 	
 }
