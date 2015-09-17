@@ -11,9 +11,11 @@ import static org.junit.Assert.*;
  */
 public class StringCalculateTest {
 
+	private StringCalculate calculate;
+	
 	@Before
     public void setUp() {
-        //TODO
+        this.calculate = new StringCalculate();
     }
 
     @After
@@ -22,17 +24,13 @@ public class StringCalculateTest {
     }
     
     @Test
-    public void emptyShouldReturnZero(){
-    	StringCalculate calculate = new StringCalculate();
-    	
-    	assertEquals(0, calculate.run(""));
+    public void emptyShouldReturnZero(){    	
+    	assertEquals(0, this.calculate.run(""));
     }
     
     @Test
-    public void aNumberShouldReturnThisNumber(){
-    	StringCalculate calculate = new StringCalculate();
-    	
-    	assertEquals(1, calculate.run("1"));
+    public void aNumberShouldReturnThisNumber(){    	
+    	assertEquals(1, this.calculate.run("1"));
     }
 	
 }
