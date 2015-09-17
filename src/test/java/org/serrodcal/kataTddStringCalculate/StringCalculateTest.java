@@ -32,5 +32,10 @@ public class StringCalculateTest {
     public void aNumberShouldReturnThisNumber(){    	
     	assertEquals(1, this.calculate.run("1"));
     }
+    
+    @Test
+    public void twoNumbersShouldReturnAdd(){    	
+    	assertEquals(3, this.calculate.run("1,2"));
+    }
 	
 }
