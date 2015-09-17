@@ -8,9 +8,13 @@ public class StringCalculate {
 		else if(args.contains(",")){
 			String[] splits = args.split(",");
 			
-			return (Integer.parseInt(splits[0]) + Integer.parseInt(splits[1]));
+			return (toInt(splits[0]) + toInt(splits[1]));
 		}else
-			return Integer.parseInt(args);
+			return toInt(args);
+	}
+
+	private int toInt(String args) {
+		return Integer.parseInt(args);
 	}
     
 }
