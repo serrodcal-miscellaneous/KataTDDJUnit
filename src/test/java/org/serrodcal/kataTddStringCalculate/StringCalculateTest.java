@@ -27,5 +27,12 @@ public class StringCalculateTest {
     	
     	assertEquals(0, calculate.run(""));
     }
+    
+    @Test
+    public void aNumberShouldReturnThisNumber(){
+    	StringCalculate calculate = new StringCalculate();
+    	
+    	assertEquals(1, calculate.run("1"));
+    }
 	
 }
