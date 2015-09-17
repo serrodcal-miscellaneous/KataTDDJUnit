@@ -7,8 +7,10 @@ public class StringCalculate {
 			return 0;
 		else if(args.contains(",")){
 			String[] splits = args.split(",");
-			
-			return (toInt(splits[0]) + toInt(splits[1]));
+			Integer sum = 0;
+			for(String num: splits)
+				sum += toInt(num);
+			return sum;
 		}else
 			return toInt(args);
 	}
